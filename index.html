@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">		<title>New Providence</title>	
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>New Providence</title>
     <!--Подключение  Шрифтов-->
     <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Varela+Round" rel="stylesheet">
-    <!--...................-->	<link rel="shortcut icon" href="img/apple_icon2.ico" type="image/x-icon">
+    <!--...................-->
+	<link rel="shortcut icon" href="img/apple_icon2.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
@@ -19,7 +20,7 @@
     <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
-    <header>
+    <header id="parallax" data-parallax="scroll" data-image-src="img/header-bg.png">
         <div class="container">
             <div class="header-top">
                 <!-- КОД ШАПКИ ДЛЯ МОБИЛЬНЫХ ДО 620PX -->
@@ -105,18 +106,17 @@
                             <a href="#" class="get-app-btn"><i class="fab fa-apple">&nbsp;</i>Get&nbsp;&nbsp;App</a>
                         </div>
                     </div>
-
                 </div>
 
-            <div class="header-main">
-                <h1>What happens tomorrow?</h1>
-                <p>
-                    The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
-                </p>
-                <a href="#" class="header-main__btn"><i class="fa fa-play animated"></i>&nbsp;&nbsp;&nbsp;&nbsp;Watch Video</a>
-                <img src="img/iPhone-6.png" alt="iPhone-6" class="header-main__iphone">
+                <div class="header-main">
+                    <h1>What happens tomorrow?</h1>
+                    <p>
+                        The sight of the tumblers restored Bob Sawyer to a degree of equanimity which he had not possessed since his interview with his landlady. His face brightened up, and he began to feel quite convivial.
+                    </p>
+                    <a href="#" class="header-main__btn"><i class="fa fa-play animated"></i>&nbsp;&nbsp;&nbsp;&nbsp;Watch Video</a>
+                    <img src="img/iPhone-6.png" alt="iPhone-6" class="header-main__iphone">
+                </div>
             </div>
-        </div>
         </div>
     </header>
     <section id="features">
@@ -223,14 +223,7 @@
             </div>
             <div class="row">
                 <div class="col-xl-6 offset-xl-3 col-md-8 offset-md-2 col-sm-12 col-xs-12">
-                    <form action="#" method="post" class="subscribe-form" id="SendInvite">
-					
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="New Providence">
-						<input type="hidden" name="admin_email" value="korney4uk4@gmail.com">
-						<input type="hidden" name="form_subject" value="Send Invite">
-						<!-- END Hidden Required Fields -->
-					
+                    <form action="#" method="post" class="subscribe-form">
                         <input type="email" name="email" placeholder="Your e-mail" required>
                         <button type="submit" class="form-btn">
                         Send Invite
@@ -536,13 +529,6 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-sm-12 col-xs-12">
                     <form action="#" method="post" class="subscribe-form js-form" id="popupResult">
-					
-						<!-- Hidden Required Fields -->
-						<input type="hidden" name="project_name" value="New Providence">
-						<input type="hidden" name="admin_email" value="korney4uk4@gmail.com">
-						<input type="hidden" name="form_subject" value="Subscribe">
-						<!-- END Hidden Required Fields -->
-					
                         <input type="email" name="email" placeholder="Your e-mail" required>
                         <button type="submit" class="form-btn">Subscribe</button>
                     </form>
@@ -621,6 +607,7 @@
 
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery-ui.min.js"></script>
+<script src="js/parallax.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="slick/slick.min.js"></script>
 <script src="js/fontawesome.min.js"></script>
